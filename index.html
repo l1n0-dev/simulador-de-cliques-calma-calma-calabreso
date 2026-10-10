@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17121c"><title>Calma Calma Calabreso Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header class="topbar"><div><p class="eyebrow">SIMULATOR • CLICKER</p><h1>🌶️ Calma Calma <span>Calabreso</span></h1></div>
+<div class="account"><span id="save-status" class="save-status">Salvando localmente</span><button id="google-login" class="secondary">Entrar com Google</button><button id="google-logout" class="secondary hidden">Sair</button></div></header>
+<section class="hero panel"><div class="hero-copy"><p class="eyebrow">SEU CALABRESO</p><h2 id="click-count">0</h2><p>cliques acumulados nesta vida</p><div class="progress"><div id="progress-fill"></div></div><p id="progress-text" class="muted">0 / 1.000.000</p>
+<button id="click-button" class="click-button" aria-label="Ganhar cliques"><span class="pepper">🌶️</span><strong>CLICAR!</strong><small id="click-power">+1 por clique</small></button><p id="event-banner" class="event-banner">Nenhum evento ativo</p></div>
+<div class="stats"><div class="stat"><span>Multiplicador total</span><strong id="total-multiplier">x1,00</strong></div><div class="stat"><span>Renascimentos</span><strong id="rebirth-count">0</strong></div><div class="stat"><span>Pets equipados</span><strong id="equipped-count">0/3</strong></div><div class="stat"><span>Multiplicador de renascimento</span><strong id="rebirth-mult">x1,00</strong></div><button id="rebirth-button" class="rebirth" disabled>🔄 Renascimento (1.000.000)</button><p class="hint">Ao renascer, os cliques zeram, mas seus pets ficam e você ganha +1,5% de bônus permanente por renascimento.</p></div></section>
+<section class="two-col"><section class="panel"><div class="section-heading"><div><p class="eyebrow">COLECIONE</p><h2>🥚 Loja de ovos</h2></div></div><p class="muted">Compre um ovo para tentar conseguir um pet aleatório. Os ovos mais caros têm pets mais raros.</p><div id="egg-list" class="egg-list"></div><div id="egg-result" class="result" aria-live="polite">Seu próximo pet pode estar aqui 👀</div></section>
+<section class="panel"><div class="section-heading"><div><p class="eyebrow">SEUS BICHINHOS</p><h2>🐾 Inventário</h2></div><span id="pet-total" class="pill">0 pets</span></div><p class="muted">Equipe até 3 pets. O multiplicador deles é multiplicado entre si.</p><div id="pet-inventory" class="pet-inventory"></div></section></section>
+<section class="panel"><div class="section-heading"><div><p class="eyebrow">CONSISTÊNCIA É TUDO</p><h2>🌶️ Pets disponíveis</h2></div></div><div id="pet-catalog" class="pet-catalog"></div></section>
+<section class="panel lower"><div><p class="eyebrow">SEUS DADOS</p><h2>💾 Salvamento</h2><p class="muted">O jogo salva neste navegador automaticamente. Entre com Google para sincronizar o progresso na nuvem depois de configurar o Firebase.</p><div class="button-row"><button id="export-save" class="secondary">Exportar backup</button><button id="import-save" class="secondary">Importar backup</button><input id="import-file" type="file" accept="application/json" class="hidden"><button id="reset-save" class="danger">Apagar progresso</button></div></div><div class="save-note"><strong>ℹ️ Dica</strong><p>O login do Google é opcional. Nunca informe sua senha do Google dentro do jogo; o login acontece pela janela oficial do Google.</p></div></section>
+<footer>Calma Calma Calabreso Simulator • feito para jogar no navegador</footer></main><div id="toast" class="toast" role="status" aria-live="polite"></div><script type="module" src="script.js"></script></body></html>
